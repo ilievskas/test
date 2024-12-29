@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(https://t3.ftcdn.net/jpg/08/71/94/18/360_F_871941816_EfutCN8vbzrzq4xeqp02FyQTAeHxUywX.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center ;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  button {
+    outline: none;
+    color: white;
+    border: none;
+    background-color: #f06666af; 
+    font-size: 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #bf4343d6; 
+  }
+
+
+  #cuci{
+    color: #bf4343d6;
+}
+  
+  
+  
