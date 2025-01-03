@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 import {driver} from '../../driver';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-comp',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './comp.component.html',
   styleUrl: './comp.component.css'
 })
@@ -17,7 +18,16 @@ export class CompComponent {
   indeks: number | undefined;
 
   onDrvView(){
-    console.log("KLIKNA ME")
+    let link: string | undefined;
+
+    if(this.vozac?.iconUrl){
+      link=this.vozac?.iconUrl;
+    }else{
+      link="https://www.google.com"
+    }
+    window.open(link, "_blank")
   }
+
+  
 
 }
